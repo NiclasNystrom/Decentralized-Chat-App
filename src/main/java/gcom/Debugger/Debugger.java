@@ -48,9 +48,6 @@ public class Debugger implements iLayer {
 		}
 	}
 
-
-
-
 	public void removeInMess(int index) {
 		inMess.remove(index);
 	}

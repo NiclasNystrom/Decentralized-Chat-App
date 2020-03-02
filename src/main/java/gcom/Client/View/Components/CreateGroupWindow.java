@@ -6,12 +6,6 @@ import gcom.Communication.UnreliableMulticaster;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- *  CreateGroupWindow: Creates a window for the user to enter group information.
- *
- *  @author c14nnm
- * */
-
 public class CreateGroupWindow {
 
 	private String[] multicasterOptions = {"Unreliable"};
@@ -68,8 +62,6 @@ public class CreateGroupWindow {
 				isDone = true;
 				break;
 		}
-
-		//isDone = (returnNumber == JOptionPane.YES_NO_CANCEL_OPTION) ? true : false;
 	}
 
 

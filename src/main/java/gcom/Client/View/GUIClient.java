@@ -19,13 +19,6 @@ import java.rmi.RemoteException;
 import java.util.HashSet;
 import java.util.Hashtable;
 
-
-/**
- *  GUIClient: View-class of the chat application.
- *
- *  @author c14nnm
- * */
-
 public class GUIClient {
 
     public int MAX_TABS = 2; // Home and one group.

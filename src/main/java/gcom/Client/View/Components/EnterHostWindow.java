@@ -5,13 +5,6 @@ import gcom.GroupManagement.HostInfo;
 import javax.swing.*;
 import java.awt.*;
 
-
-/**
- *  EnterHostWindow: Window that lets user to specify host information.
- *
- *  @author c14nnm
- * */
-
 public class EnterHostWindow {
 
 	private int inputSize = 15;

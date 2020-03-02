@@ -8,12 +8,6 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
-/**
- *  ArrayConverter: Various methods to convert specific data structures into other structures that is needed throughout the project.
- *
- *  @author c14nnm
- * */
-
 public class ArrayConverter {
 
 	public static String[] toStringArray(Set<String> set) {

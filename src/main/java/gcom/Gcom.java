@@ -25,12 +25,6 @@ import java.rmi.registry.Registry;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentMap;
 
-/**
- *  Gcom: The main module that initiates the middleware gcom.
- *
- *  @author c14nnm
- * */
-
 public class Gcom implements iLayer, Serializable {
 
     public static LinkedLayerTransfer receiveLayers;
@@ -73,14 +67,6 @@ public class Gcom implements iLayer, Serializable {
         this.controller.refreshGroups();
     }
 
-
-
-    /**
-     *  Creates a gcom when you're creating a group.
-     *
-     *  @author c14nnm
-     * */
-
     public void initGcomCreate() throws RemoteException, NotBoundException  {
 
         this.orderType = this.controller.getView().isUnorderedOrderSelected()   ? OrdererType.UNORDERED
@@ -117,13 +103,6 @@ public class Gcom implements iLayer, Serializable {
 
         self.setGroupManager(gm);
     }
-
-
-    /**
-     *  Creates a gcom when you're joining a group.
-     *
-     *  @author c14nnm
-     * */
 
     public void initGcomJoin(String name) throws RemoteException, NotBoundException  {
 

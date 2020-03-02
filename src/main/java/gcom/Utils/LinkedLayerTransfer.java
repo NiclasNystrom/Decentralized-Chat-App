@@ -8,12 +8,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 
-/**
- *  LinkedLayerTransfer: Implementation of the custom linked layer transfer of messages between all the modules.
- *
- *  @author c14nnm
- * */
-
 public class LinkedLayerTransfer {
 
 	private LayerDirection dir;
@@ -71,11 +65,6 @@ public class LinkedLayerTransfer {
 
 
 
-	/**
-	 *  Initiates a stream of sending a message through all layers.
-	 *  @param  m - message to send
-	 *  @author c14nnm
-	 * */
 	public void send(iMessage m) {
 
 		if (queue.size() > 0) {
@@ -116,13 +105,6 @@ public class LinkedLayerTransfer {
 		}
 	}
 
-
-	/**
-	 *  Initiates a stream of sending a message through all layers starting from index sIndex
-	 *  @param  m - message to send
-	 *  @param  sIndex
-	 *  @author c14nnm
-	 * */
 	public void send(iMessage m, int sIndex) {
 
 		HashMap<iMessage, Integer> e = createEntry(m, sIndex);
@@ -136,11 +118,6 @@ public class LinkedLayerTransfer {
 
 
 
-	/**
-	 *  Send message to next layer.
-	 *  @param  m - message to send
-	 *  @author c14nnm
-	 * */
 	public void nextLayer(iMessage m){
 
 		if (i >= (layers.size()-1)) {
